@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import confetti from "canvas-confetti";
+import happy from "../../pub/happy.jpg";
+import right from "../../pub/right_decision.jpg";
 
 const Success = () => {
     const handleClick = () => {
@@ -29,8 +31,8 @@ const Success = () => {
     handleClick();
   }, [])
     return <div className="success">
-        <img alt="happy" src="/src/pub/happy.jpg"/>
-        <img alt="right" src="/src/pub/right_decision.jpg"/>
+        <img alt="happy" src={happy}/>
+        <img alt="right" src={right}/>
         <span>Ура!</span>
     </div> 
 };

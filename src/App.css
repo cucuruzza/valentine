@@ -50,6 +50,16 @@
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-yes:hover {
+    transform: scale(1.2);
+}
+
+.-clicked {
+    animation: move-button-yes 0.25s ease-in-out !important;
+    animation-fill-mode: forwards;
 }
 
 .button-no {
@@ -60,11 +70,12 @@
     opacity: 0.4;
     cursor: not-allowed;
     position: relative;
+    color: black;
+    transition: all 0.3s ease-in;
 }
 
 .defeat {
     width: 500px;
-    height: 500px;
     background-color: beige;
     padding: 25px;
     border-radius: 20px;
@@ -73,6 +84,7 @@
     align-items: center;
     gap: 10px;
     margin: 10px;
+    height: fit-content;
 }
 
 .defeat img {
@@ -84,6 +96,9 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 48px;
+    text-align: center;
+    font-size: 30.5pt;
+    color: black;
 }
 
 .button-change-choice {
@@ -95,10 +110,11 @@
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    text-align: center;
+    min-height: fit-content;
 }
 .success {
     width: 500px;
-    height: 600px;
     background-color: beige;
     padding: 25px;
     border-radius: 20px;
@@ -107,6 +123,7 @@
     align-items: center;
     gap: 10px;
     margin: 10px;
+    height: fit-content;
 }
 
 .success img {

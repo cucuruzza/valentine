@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ASKING_MODES, BUTTON_POSITIONS } from "../../enums/ValentineEnums";
 import kitten from "../../pub/kitten.png";
 
@@ -15,8 +15,6 @@ const AskingForm = ({setCurrentMode}) => {
         }
         setCount(prev => prev + 1);
     };
-
-    console.log(count);
 
     return <div className="asking-form">
         <span className="asking-form__question">

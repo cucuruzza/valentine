@@ -5,7 +5,7 @@ export const ASKING_MODES = {
 };
 
 export const BUTTON_POSITIONS = [
-    undefined,
+    {top: 0, left: 0},
     {top: 20, left: 45},
     {top: -50, left: 60},
     {top: 12, left: 20},
